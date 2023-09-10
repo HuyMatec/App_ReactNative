@@ -25,7 +25,7 @@ const Detail = (props) => {
                     <View style={styles.column1}>
                         <View style={styles.row}>
                             <View style={styles.row1}>
-                                <Image source={require('../../../src/media/images/ic_bbcnews.png')} style={{ top: 5 }} />
+                                <Image source={require('../../../src/media/images/ic_bbcnews.png')} />
                                 <View style={styles.column2}>
                                     <Text style={styles.fontBBCN}>BBC News</Text>
                                     <Text style={styles.fonttimepicker}>14m ago</Text>
@@ -44,7 +44,7 @@ const Detail = (props) => {
                 </View>
             </ScrollView>
             :
-            <View>
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <Text style={{ fontSize: 40 }}>Đang tải dữ liệu</Text>
             </View>
     )

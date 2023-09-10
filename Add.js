@@ -73,7 +73,7 @@ const Add = (props) => {
                 (cover) ?
                     <Image
                         source={{ uri: cover?.assets[0]?.uri }}
-                        style={{ width: 340, height: 180 }}
+                        style={{ width: '100%', height: 180 }}
                     /> :
 
                     <Pressable
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     imagePicture: {
         marginTop: 16,
         backgroundColor: '#EEF1F4',
-        width: 340,
+        width: '100%',
         height: 180,
     },
     textInput1: {
